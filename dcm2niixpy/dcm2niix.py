@@ -5,7 +5,7 @@ import shutil
 from typing import Dict
 from typing import Union
 
-import spython.utils
+#import spython.utils
 
 from spython.main import Client
 
@@ -80,7 +80,7 @@ class DCM2NIIX:
         Returns:
             bool: True if singularity is installed
         """
-        return spython.utils.check_install()
+        return #spython.utils.check_install()
 
     def _construct_container_url(self) -> str:
         if self.container_backend == self.SINGULARITY_KEYWORD:
